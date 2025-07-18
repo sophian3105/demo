@@ -19,9 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: jupyterlite/action@v1
+      - uses: jupyterlite/github-deploy@v0
         with:
-          output_dir: ./dist
+          output_dir: dist
 
       - uses: actions/upload-pages-artifact@v3
         with:
