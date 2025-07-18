@@ -2,14 +2,14 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [main]     # rebuild every time you push to main
+    branches: [main]     
   pull_request:
-    branches: ['*']      # optional – lets PRs build a preview
+    branches: ['*']     
 
 permissions:
   contents: read
   pages: write
-  id-token: write        # needed by `deploy-pages`
+  id-token: write        
 
 concurrency:
   group: "pages"
